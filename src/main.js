@@ -9,6 +9,9 @@ Vue.use(BootstrapVue)
 // Bootstrap
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
+// Leaflet
+import 'leaflet/dist/leaflet.css';
+// Custom
 require('@/assets/styles/main.scss')
 
 Vue.config.productionTip = false

@@ -1,7 +1,7 @@
 <template>
   <div>
     <b-navbar toggleable="lg" type="light">
-      <b-navbar-brand href="/" class="logo-top"><img :src="require('@/assets/images/logo-inversion.svg')"
+      <b-navbar-brand href="/" class="logo-top"><img :src="require('@/assets/images/logo.svg')"
           alt="Logo OX Sports Bar"></b-navbar-brand>
       <div class="navbar-toggler-custom" :class="{open: show}" @click="show = !show">
         <div class="menu-line-a"><img :src="require('@/assets/images/tools/menu-line.svg')" alt=""></div>
@@ -43,15 +43,14 @@
       .nav-item {
         &:not(.nav-item-img) {
           color: #000;
-          font-family: 'Gilroy';
           font-weight: 700;
           padding-right: 20px;
         }
       }
 
       .nav-link {
-        // color: #000;
-        color: #fff;
+        color: #000;
+        // color: #fff;
       }
     }
   }
@@ -71,7 +70,7 @@
       position: relative;
       top: 50%;
       left: 50%;
-      transform: translate(-50%, -40%);
+      transform: translate(-50%, -25%);
     }
   }
 
