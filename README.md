@@ -1,24 +1,18 @@
-# oxbar
+# OX Sportsbar
 
-## Project setup
-```
-npm install
-```
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+OX sportsbar website Vue.js and Bootstrap.
 
-### Compiles and minifies for production
-```
-npm run build
-```
+UI Design **Miroljub Grujin <miro.grujin@hotmail.com>**
 
-### Lints and fixes files
-```
-npm run lint
-```
+## Author
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+👤 **Miroljub Grujin <miro.grujin@hotmail.com>**
+
+- [Live](https://ox-sportsbar.at)
+- [GitHub](https://github.com/mcmiro)
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
