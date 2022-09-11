@@ -70,7 +70,7 @@
           <h1>Hello!</h1>
           <h2>Ein cooles Bier?</h2>
           <h5>
-            Mit 10+ verschiedenen Sorten Bier, treffen wir jeden Geschmack
+            Mit 10 verschiedenen Sorten Bier, treffen wir jeden Geschmack
           </h5>
           <p class="pt-3">
             Wir lassen Dich nicht verdursten! Zu den Live-Übertragungen von
