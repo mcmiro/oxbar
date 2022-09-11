@@ -1,23 +1,23 @@
 <template>
   <div>
     <b-navbar toggleable="lg" type="light">
-      <b-navbar-brand href="/" class="logo-top"><img :src="require('@/assets/images/logo.svg')"
+      <b-navbar-brand href="/" class="logo-top"><img :src="logo.url"
           alt="Logo OX Sports Bar"></b-navbar-brand>
       <div class="navbar-toggler-custom" :class="{open: show}" @click="show = !show">
-        <div class="menu-line-a"><img :src="require('@/assets/images/tools/menu-line.svg')" alt=""></div>
-        <div class="menu-line-b"><img :src="require('@/assets/images/tools/menu-line.svg')" alt=""></div>
-        <div class="menu-line-c"><img :src="require('@/assets/images/tools/menu-line.svg')" alt=""></div>
+        <div class="menu-line-a"><img :src="menu.url" alt=""></div>
+        <div class="menu-line-b"><img :src="menu.url" alt=""></div>
+        <div class="menu-line-c"><img :src="menu.url" alt=""></div>
       </div>
       <div class="navbar-collapse" :class="{show: show}">
         <!-- Right aligned nav items -->
         <b-navbar-nav class="ml-auto">
-          <b-navbar-nav>
-            <b-nav-item href="#">HOME</b-nav-item>
-            <b-nav-item href="#">BAR</b-nav-item>
-            <b-nav-item href="#">PROGRAM</b-nav-item>
-            <b-nav-item href="#">IMPRESSUM</b-nav-item>
-            <b-nav-item href="#">LOCATION</b-nav-item>
-            <b-nav-item href="#" class="nav-item-img"><img :src="require('@/assets/images/icons/location.svg')"
+          <b-navbar-nav :class="menu.class">
+            <b-nav-item href="/">HOME</b-nav-item>
+            <b-nav-item href="#" @click="show = false" v-scroll-to="'#hello'">HELLO</b-nav-item>
+            <b-nav-item href="#" @click="show = false" v-scroll-to="'#bar'">BAR</b-nav-item>
+            <b-nav-item href="#" @click="show = false" v-scroll-to="'#instagram'">INSTAGRAM</b-nav-item>
+            <b-nav-item href="#" @click="show = false" v-scroll-to="'#location'">KONTAKT</b-nav-item>
+            <b-nav-item href="#" @click="show = false" v-scroll-to="'#location'" class="nav-item-img"><img :src="require('@/assets/images/icons/location.svg')"
                 alt="Logo OX Sports Bar"></b-nav-item>
           </b-navbar-nav>
         </b-navbar-nav>
@@ -29,9 +29,20 @@
 <script>
   export default {
     name: 'NavBar',
+    props: {
+      logo: {
+        url: String,
+        required: true
+      },
+      menu: {
+        url: String,
+        class: String,
+        required: true
+      },
+    },
     data() {
       return {
-        show: false
+        show: false,
       }
     }
   }
@@ -42,15 +53,9 @@
     .navbar-nav {
       .nav-item {
         &:not(.nav-item-img) {
-          color: #000;
           font-weight: 700;
           padding-right: 20px;
         }
-      }
-
-      .nav-link {
-        color: #000;
-        // color: #fff;
       }
     }
   }
@@ -74,7 +79,7 @@
     }
   }
 
-  @media only screen and (min-width: 769px) {
+  @media only screen and (min-width: 992px) {
     .navbar-light {
       .navbar-nav {
         .nav-item {
@@ -83,19 +88,63 @@
             margin-top: .1rem;
           }
         }
+        &.light {
+          .nav-item {
+            &:not(.nav-item-img) {
+              color: #000;
+            }
+          }
+    
+          .nav-link {
+            color: #000;
+          }
+        }
+        &.dark {
+          .nav-item {
+            &:not(.nav-item-img) {
+              color: #fff;
+            }
+          }
+    
+          .nav-link {
+            color: #fff;
+          }
+        }
       }
     }
-    
+
     .navbar-toggler-custom {
       display: none;
     }
   }
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 991px) {
     .navbar-light {
       .navbar-nav {
         .nav-item {
           font-size: 1.3rem;
           margin-top: .8rem;
+        }
+        &.light {
+          .nav-item {
+            &:not(.nav-item-img) {
+              color: #000;
+            }
+          }
+    
+          .nav-link {
+            color: #000;
+          }
+        }
+        &.dark {
+          .nav-item {
+            &:not(.nav-item-img) {
+              color: #000;
+            }
+          }
+    
+          .nav-link {
+            color: #000;
+          }
         }
       }
     }
