@@ -3,7 +3,7 @@
     <b-container class="pb-10" id="instagram">
       <b-row>
         <b-col cols="12">
-          <h1><span class="gradient">#</span>Beers</h1>
+          <h1><span class="gradient">#</span>Drinks</h1>
         </b-col>
       </b-row>
       <!-- beer brands -->
@@ -33,44 +33,52 @@ export default {
     return {
       beers: [
         {
+          brand: "Absolut Vodka",
+          logo: require("@/assets/images/brands/absolut.png"),
+        },
+        {
+          brand: "Beefeater",
+          logo: require("@/assets/images/brands/beefeater.png"),
+        },
+        {
+          brand: "Chovas",
+          logo: require("@/assets/images/brands/chivas.png"),
+        },
+        {
           brand: "Guinness",
           logo: require("@/assets/images/brands/guinness.jpg"),
         },
         {
-          brand: "Erdinger",
-          logo: require("@/assets/images/brands/erdinger.jpg"),
-        },
-        {
-          brand: "American Bud",
-          logo: require("@/assets/images/brands/bud.jpg"),
-        },
-        {
-          brand: "Budweiser",
-          logo: require("@/assets/images/brands/budweiser.jpg"),
-        },
-        {
-          brand: "BrauWerk",
-          logo: require("@/assets/images/brands/brauwerk.jpg"),
-        },
-        {
-          brand: "Corona",
-          logo: require("@/assets/images/brands/corona.jpg"),
-        },
-        {
-          brand: "Stella Artois",
-          logo: require("@/assets/images/brands/stellaartois.jpg"),
-        },
-        {
-          brand: "Fosters",
-          logo: require("@/assets/images/brands/fosters.jpg"),
-        },
-        {
-          brand: "Ottakringer",
-          logo: require("@/assets/images/brands/ottakringer.jpg"),
+          brand: "Havana",
+          logo: require("@/assets/images/brands/havana.png"),
         },
         {
           brand: "Heineken",
           logo: require("@/assets/images/brands/heineken.jpg"),
+        },
+        {
+          brand: "Jameson",
+          logo: require("@/assets/images/brands/jameson.png"),
+        },
+        {
+          brand: "Jim Beam",
+          logo: require("@/assets/images/brands/jameson.png"),
+        },
+        {
+          brand: "Kilkenny",
+          logo: require("@/assets/images/brands/kilkenny.png"),
+        },
+        {
+          brand: "Laphroaig",
+          logo: require("@/assets/images/brands/laphroaig.png"),
+        },
+        {
+          brand: "Maker's Mark",
+          logo: require("@/assets/images/brands/makers-mark.png"),
+        },
+        {
+          brand: "Monkey 47",
+          logo: require("@/assets/images/brands/monkey-47.png"),
         },
       ],
     };

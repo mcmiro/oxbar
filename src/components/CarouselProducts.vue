@@ -13,8 +13,7 @@
         <b-row>
           <b-col cols="7" class="description">
             <h3>{{ product.title }}</h3>
-            <div class="pt-3"></div>
-            <span class="price">€{{ product.price }}</span>
+            <span class="subtitle" v-if="product.subtitle">{{ product.subtitle }}</span>
           </b-col>
           <b-col cols="5" class="product-img">
             <img :src="product.image" :alt="product.title" />
@@ -46,23 +45,20 @@ export default {
     return {
       products: [
         {
-          title: "GROSSES OFFENES BIER",
-          price: "4,20",
+          title: "DRAFT BEERS",
+          subtitle: "Guinness, Kilkenny, Heineken & Saison-Bier",
           image: require("@/assets/images/products/beer.png"),
         },
         {
-          title: "HOPS BIER FLASCHE 0,33l",
-          price: "4,90",
-          image: require("@/assets/images/products/bottle.png"),
+          title: "CRAFTBEERS",
+          image: require("@/assets/images/products/crew-republik.png"),
         },
         {
-          title: "AMERICAN SMALL BIER",
-          price: "4,20",
-          image: require("@/assets/images/products/bottle-green.png"),
+          title: "Spirituosen",
+          image: require("@/assets/images/products/proper-twelve.png"),
         },
         {
-          title: "RED BULL DOSE 0,25l",
-          price: "4,90",
+          title: "Softdrinks",
           image: require("@/assets/images/products/red-bull.png"),
         },
       ],
@@ -108,9 +104,11 @@ export default {
       .description {
         h3 {
           font-weight: 700;
+          text-transform: uppercase;
+          white-space: nowrap;
         }
 
-        .price {
+        .subtitle {
           font-weight: 400;
           color: #a7a7a7;
         }
@@ -128,10 +126,8 @@ export default {
           -webkit-filter: blur(6px);
           position: absolute;
           top: 15px;
-          right: 0px;
           z-index: 1;
           opacity: 0.6;
-          width: 100%;
         }
       }
     }
@@ -155,8 +151,40 @@ export default {
             font-size: 1rem;
           }
 
-          .price {
+          .subtitle {
             font-size: 0.9rem;
+          }
+        }
+
+        .product-img {
+          img {
+            width: 120%;
+            right: -5px;
+          }
+
+          .blured {
+            width: 100%;
+            right: -5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .hooper {
+    .hooper-slide {
+      padding-left: 20px;
+      .card {
+        .product-img {
+          img {
+            width: 80%;
+          }
+
+          .blured {
+            width: 70%;
+            right: 35px;
           }
         }
       }
@@ -182,10 +210,22 @@ export default {
           h3 {
             font-size: 1.6rem;
           }
-          .price {
+          .subtitle {
             font-size: 1.3rem;
           }
         }
+
+        .product-img {
+          img {
+            width: 80%;
+          }
+
+          .blured {
+            width: 70%;
+            right: 50px;
+          }
+        }
+
       }
     }
   }

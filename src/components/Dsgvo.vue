@@ -33,10 +33,10 @@
       </ul>
       <p>
         Du erreichst uns unter folgenden Kontaktdaten:
-        <br />Firmenname: OX Sportsbar GmbH
-        <br />Adresse: Judengasse 7, 1010 Wien
-        <br />Telefon: +43 699 10049993‬
-        <br />E-Mail: info@ox-sportsbar.at
+        <br>Firmenname: OX Gastronomie GmbH
+        <br>Adresse: Wiedner Hauptstraße 130, 1050 Wien
+        <br>Telefon: +43 660 111 33 80 
+        <br>E-Mail: ox-sportsbar@gmx.at
       </p>
     </b-container>
   </div>

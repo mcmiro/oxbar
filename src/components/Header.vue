@@ -133,10 +133,10 @@ export default {
   },
   watch: {
     windowWidth() {
-      if (this.windowWidth <= 768) {
+      if (this.windowWidth <= 991) {
         this.items = 1;
         this.rerenderCarousel();
-      } else if (this.windowWidth > 768) {
+      } else if (this.windowWidth > 992) {
         this.items = 2;
         this.rerenderCarousel();
       }

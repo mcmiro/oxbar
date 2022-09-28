@@ -14,7 +14,17 @@
         </b-col>
       </b-row>
       <!-- instagram feeds -->
-      <b-row>
+      <vue-instagram token="youraccessTokenHere" username="UsernameHere" :count="3">
+          <template slot="feeds" scope="props">
+              <li class="instagram-media fancy-list"> {{ props.feed.link }} </li>
+              <img :src=" props.feed.images.standard_resolution.url " alt="">
+          </template>
+          <template slot="error" scope="props">
+              <div class="fancy-alert"> {{ props.error.error_message }} </div>
+          </template>
+      </vue-instagram>
+
+      <!-- <b-row>
         <b-col
           cols="6"
           md="3"
@@ -38,14 +48,19 @@
             </b-card>
           </a>
         </b-col>
-      </b-row>
+      </b-row> -->
     </b-container>
   </div>
 </template>
 
 <script>
+import VueInstagram from 'vue-instagram'
+
 export default {
   name: "Instagram",
+  components: {
+    VueInstagram
+  },
   data() {
     return {
       instagram: {
@@ -54,32 +69,9 @@ export default {
     };
   },
   methods: {
-    getInstagramFeeds(html) {
-      if (html) {
-        var regex = /_sharedData = ({.*);<\/script>/m,
-          json = JSON.parse(regex.exec(html)[1]),
-          edges =
-            json.entry_data.ProfilePage[0].graphql.user
-              .edge_owner_to_timeline_media.edges;
-        this.instagram.feeds = edges;
-      }
-    },
   },
   mounted() {
-    const name = "thesportsbar_ra";
-    const http = new XMLHttpRequest();
-
-    http.open(
-      "GET",
-      "https://images" +
-        ~~(Math.random() * 3333) +
-        "-focus-opensocial.googleusercontent.com/gadgets/proxy?container=none&url=https://www.instagram.com/" +
-        name +
-        "/"
-    );
-    http.send();
-
-    http.onload = () => this.getInstagramFeeds(http.responseText);
+    
   },
 };
 </script>

@@ -167,15 +167,11 @@
             </b-col>
             <!-- pub image end -->
             <b-col cols="12" md="6" class="pb-5">
-              <span class="big-number">#50</span>
+              <span class="big-number">#100</span>
               <h2>Geht's noch?</h2>
-              <h5>50 Gäste - ein Geschmack</h5>
+              <h5>100 Gäste - ein Geschmack</h5>
               <p class="pt-3">
-                Unsere Atmosphäre ist freundschaftlich und gemütlich. Unsere
-                Räumlichkeiten, inklusive Schanigarten bieten Platz für 50+
-                Menschen. 50 Personen mit demselben Ziel: gutes Spiel inklusive
-                gutem Bier zu genießen. Bist Du bereits einer davon? Wenn nicht,
-                bist Du jederzeit willkommen!
+                Unsere Atmosphäre ist freundschaftlich und gemütlich. Unsere Räumlichkeiten, inklusive Schanigarten bieten Platz für 100+ Menschen. 100 Personen mit demselben Ziel: gutes Spiel inklusive gutem Bier zu genießen. Bist Du bereits einer davon? Wenn nicht, bist Du jederzeit willkommen!
               </p>
             </b-col>
           </b-row>

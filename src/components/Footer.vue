@@ -3,7 +3,7 @@
     <!-- Info START -->
     <b-container class="pb-5 pt-3">
       <span class="big-number">#Location</span>
-      <h1>Judengasse 7, 1010 Wien</h1>
+      <h1>Wiedner Hauptstraße 130, 1050 Wien</h1>
     </b-container>
     <b-container class="footer p-3">
       <b-row class="w-100 m-0">
@@ -18,7 +18,7 @@
               @update:center="centerUpdated"
               @update:bounds="boundsUpdated"
             >
-              <l-marker :lat-lng="[48.21155, 16.37363]">
+              <l-marker :lat-lng="[48.184160, 16.360770]">
                 <l-icon
                   :icon-anchor="staticAnchor"
                   :icon-size="[70, 0]"
@@ -36,15 +36,15 @@
         <b-col cols="12" md="5" class="bg-white p-5 info">
           <h4>Kontakt</h4>
           <p class="op-6">Adresse:</p>
-          <h5>Judengasse 7</h5>
-          <h5>1010 Wien</h5>
+          <h5>Wiedner Hauptstraße 130</h5>
+          <h5>1050 Wien</h5>
           <p class="op-6">Telefon:</p>
           <h5>
-            <a href="tel:+4369910049993‬">0699 1004 9993‬</a>
+            <a href="tel:+436601113380">0660 111 33 80</a>
           </h5>
           <p class="op-6">E-Mail:</p>
           <h5>
-            <a href="mailto:info@oxsportsbar.at">info@ox-sportsbar.at</a>
+            <a href="mailto:ox-sportsbar@gmx.at">ox-sportsbar@gmx.at</a>
           </h5>
           <p class="op-6" v-b-modal.modal>DSGVO</p>
           <b-modal id="modal" ok-only>
@@ -62,7 +62,7 @@
     </cookie-law>
     <b-container>
       <div class="copyright">
-        © Alle Rechte vorbehalten {{ year }} - OX Sportsbar GmbH <br />Design &
+        © Alle Rechte vorbehalten 2022 - OX Gastronomie GmbH <br />Design &
         Development by
         <a href="https://www.heyio.at" target="_blank">Heyio</a>
       </div>
@@ -89,7 +89,7 @@ export default {
     return {
       year: new Date().getFullYear(),
       zoom: 18,
-      center: [48.21155, 16.37363],
+      center: [48.184160, 16.360770],
       url: "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
       attribution:
         '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',

@@ -16,6 +16,7 @@
     "sass": "^1.54.9",
     "vue": "^2.6.11",
     "vue-cookie-law": "^1.13.3",
+    "vue-instagram": "^3.0.0",
     "vue-scrollto": "^2.18.2",
     "vue2-leaflet": "^2.5.2"
   },
